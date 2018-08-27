@@ -1,0 +1,66 @@
+<html ng-app="zambrey-app">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>Ameya Zambre</title>
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!--script src="https://code.jquery.com/jquery-2.1.4.min.js"></script-->
+		<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+	<body ng-controller="zambrey-ctrl">
+		<div class="sidebar" ng-class="{sidebar_shown: displaySidebar}">
+			<div class="face">
+				<img ng-src="images/face.jpg">
+			</div>
+			<div id="nameText">{{nameText}}</div>
+			<div id="nameSubtext">{{nameSubtext}}</div>
+			<ul>
+				<li ng-repeat="section in sections">
+					<a href="{{section.link}}">{{section.title}}</a>
+				</li>
+			</ul>
+			<div class="social-holder">
+				<i ng-repeat="social in socialMedia" class="{{social.class}}" link="{{social.link}}" ng-click="openInNewWindow();"></i>
+			</div>
+		</div>
+
+		<div class="content" ng-class="{content_sidebar_shown: displaySidebar}">
+			<div ng-repeat="sectionItem in sections"  class="section" id="{{sectionItem.id}}">
+				<h3>{{sectionItem.title}}</h3>
+				<ul>
+					<li ng-repeat="item in sectionItem.content">
+						<div class="project">
+							<h4 ng-show="item.title!==undefined">{{item.title}}</h4>
+							<div>
+								<span ng-show="item.company!==undefined"><i>{{item.company}}</i></span>
+								<span ng-show="item.duration!==undefined"><i>({{item.duration}})</i></span>
+							</div>
+							<div ng-show="item.description!==undefined">{{item.description}}</div>
+							<div ng-show="item.guide!==undefined">
+								<i class="fa fa-user bullet"></i>
+								<span ng-show="item.guide.homepage===undefined">{{item.guide.name}}, {{item.guide.title}}</span>
+								<a ng-show="item.guide.homepage!==undefined" href="{{item.guide.homepage}}" target="_blank">{{item.guide.name}}, {{item.guide.title}}</a>
+							</div>
+							<div ng-show="item.link!==undefined">
+								<i class="fa fa-link bullet"></i>
+								<a href={{item.link.href}} target="_blank">{{item.link.label}}</a>
+							</div>
+							<div ng-show="item.technology!==undefined"><i class="fa fa-code bullet"></i>{{item.technology}}</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header" ng-class="{header_sidebar_shown: displaySidebar}">
+			<div class="fa fa-bars sidebar-button" ng-click="displaySidebar=!displaySidebar"></div>
+			<span>{{nameText}}</span>
+		</div>
+		<div class="footer"></div>
+	</body>
+	<footer></footer>
+</html>
