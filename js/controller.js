@@ -17,13 +17,13 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 
 	$scope.aboutMe=[
 		{
-			"description":"The name is Ameya(pronounced 'uh-meh-yuh'). I currently work as a Software Developer with Excel team at Microsoft. Before joining Microsoft I worked at Oracle for a few years. I graduated from Georgia Tech and am a proud BITSian. I also worked as Intern at Epic Systems in Madison and Intel India in Bangalore."
+			"description":"The name is Prashant(pronounced 'pra-san-t'). I am a graduate student, pursuing my Masters degree in Computer Science at Indiana University Bloomington. I have 4 years of industry experience as a Software Developer, during which I was involved in all stages of the SDLC. I am currently looking for full-time opportunities in Software Development. My previous roles were Software Consultant at Genpact Headstrong Capital Markets, specialized in Capital Markets and Warranty domain."
 		}
 	];
 
 	$scope.recentProjects=[
 		{
-			"title":"Complex data in Excel",
+			"title":"Brio",
 			"description":"Worked on a project to create an interface(cards) for newly supported entity values in Excel on all endpoints (Win32, UWP, Android, iOS and Web).",
 			"link":{
 				"label":"TechCrunch",
@@ -32,7 +32,7 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 			"technology":"C++, Java, TypeScript"
 		},
 		{
-			"title":"Einthusan Monitor",
+			"title":"WORM Reconciliator",
 			"description":"A solution to monitor a movie website for latest movies and also to search in existing movies using website's REST services. It was published on chrome webstore with 2500+ users. Code available on Github (zambrey).",
 			"link":{
 				"label":"Code@Github",
@@ -41,19 +41,19 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 			"technology":"JavaScript, HTML/CSS"
 		},
 		{
-			"title":"zambrey.github.io",
+			"title":"pkmsoftpro.github.io",
 			"description":"A responsive personal webpage",
 			"link":{
 				"label":"Code@Github",
-				"href":"https://github.com/zambrey/zambrey.github.io",
+				"href":"https://github.com/pkmsoftpro/pkmsoftpro.github.io",
 			},
 			"technology":"AngularJS, jquery, HTML/CSS"
 		},
 		{
-			"title":"JD Edwards EnterpriseOne for iPad",
+			"title":"Teevra Gateway",
 			"description":"Working independently on iPad application. Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well). Responsible for supporting all new features being developed on iPad browser and application and for uptaking latest iOS SDKs.",
 			"link":{
-				"label":"JD Edwards EnterpriseOne for iPad",
+				"label":"Teevra Gateway",
 				"href":"https://itunes.apple.com/us/app/jd-edwards-enterpriseone-for/id624165519",
 			},
 			"technology":"Java, JavaScript(HTML/CSS), Objective-C"
