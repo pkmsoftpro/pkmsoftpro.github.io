@@ -23,22 +23,22 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 
 	$scope.recentProjects=[
 		{
-			"title":"Brio",
-			"description":"Worked on a project to create an interface(cards) for newly supported entity values in Excel on all endpoints (Win32, UWP, Android, iOS and Web).",
-			"link":{
-				"label":"TechCrunch",
-				"href":"https://techcrunch.com/2018/03/29/excel-is-getting-smarter/",
-			},
-			"technology":"C++, Java, TypeScript"
-		},
-		{
-			"title":"WORM Reconciliator",
-			"description":"A solution to monitor a movie website for latest movies and also to search in existing movies using website's REST services. It was published on chrome webstore with 2500+ users. Code available on Github (zambrey).",
+			"title":"Airavata Nextcloud",
+			"description":"Development of the WebDAV adaptor and integration of adaptor into Apache Airavata, which is a software framework to compose and manage the large-scale applications and workflows on distributed computing resources such as local clusters, supercomputers, computational grids, and computing clouds. Development and integration of the nextcloud connector in Java to the SEAGrid-rich client that is used to run the experiments using Apache Airavata as the middle man. Development of the API methods in Java to download the files and folders. Addition of the client-side changes in the PHP gateway admin portal to use the new WebDAV adapter for the nextcloud to replace the SCP transfers.",
 			"link":{
 				"label":"Code@Github",
-				"href":"https://github.com/zambrey/Einthusan-Monitor",
+				"href":"https://github.com/airavata-courses/airavata-nextcoud",
 			},
-			"technology":"JavaScript, HTML/CSS"
+			"technology":"Java, JavaFX, Jenkins, Docker, Ansible"
+		},
+		{
+			"title":"Advanced Operating System",
+			"description":"Implemented an in-memory file system for Xinu-OS. Wrote system calls for process synchronization using semaphores and implemented futures.",
+			"link":{
+				"label":"Code@Github",
+				"href":"https://github.com/pkmsoftpro/Xinu-OS-P536-S18",
+			},
+			"technology":"C"
 		},
 		{
 			"title":"pkmsoftpro.github.io",
@@ -50,22 +50,22 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 			"technology":"AngularJS, jquery, HTML/CSS"
 		},
 		{
-			"title":"Teevra Gateway",
-			"description":"Working independently on iPad application. Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well). Responsible for supporting all new features being developed on iPad browser and application and for uptaking latest iOS SDKs.",
+			"title":"GameMaker",
+			"description":"Developed a game maker application in an object oriented style, which allowed the user to build various arcade games dynamically by adding sprites and related events to a game arena.",
 			"link":{
-				"label":"Teevra Gateway",
-				"href":"https://itunes.apple.com/us/app/jd-edwards-enterpriseone-for/id624165519",
+				"label":"Code@Github",
+				"href":"https://github.com/pkmsoftpro/GameMaker",
 			},
-			"technology":"Java, JavaScript(HTML/CSS), Objective-C"
+			"technology":"Java, Spring MVC, MySQL, Phaser.js"
 		},
 		{
-			"title":"Third party apps support for JD Edwards",
-			"description":"Worked in a team of 4 to support third party ADF applications in existing framework. The work involved developing a container to host ADF applications, allowing embedding appropriate content in authorized iframes, establishing secure communication link between different domains, managing sessions, supporting single sign on and overall providing a seamless experience for the end user.",
+			"title":"Breakout-Game",
+			"description":"As a part of the P532 course at Indiana University, We had to create a game maker using Java in swing. I contributed to developing a generic Game Maker Application in Java that could be used to build and play a range of arcade games. Made extensive use of Java design patterns to implement generic features of the game. Features of the application: Save and Load, Sound, Webstartable Technologies. Design Patterns used: Singleton, Command, Composite, Factory, Façade, MVC, Observer pattern. User can save/load built games, define game rules/actions along with basic game play features. Customizable game and future proof implementation, reusable codebase.",
 			"link":{
-				"label":"Public Documentation",
+				"label":"Code@Github",
 				"href":"https://docs.oracle.com/cd/E24902_01/doc.91/e61893/toc.htm",
 			},
-			"technology":"Java, JavaScript(HTML/CSS)"
+			"technology":"Swing, Bamboo, Fisheye, Log4J, JUnit, Mockito, Maven, Design Patterns"
 		}
 	];
 
@@ -268,17 +268,17 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 		{
 			"name":"LinkedIn",
 			"class":"fa fa-linkedin social",
-			"link":"https://www.linkedin.com/in/ameyazambre"
+			"link":"https://www.linkedin.com/in/pkmsoftpro/"
 		},
 		{
 			"name":"Twitter",
 			"class":"fa fa-twitter social",
-			"link":"https://twitter.com/ameyazambre"
+			"link":"https://twitter.com/pkmsoftpro"
 		},
 		{
 			"name":"GitHub",
 			"class":"fa fa-github social",
-			"link":"https://github.com/zambrey/"
+			"link":"https://github.com/pkmsoftpro"
 		}
 	];
 
