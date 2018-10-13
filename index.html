@@ -45,7 +45,7 @@
 								<span ng-show="item.guide.homepage===undefined">{{item.guide.name}}, {{item.guide.title}}</span>
 								<a ng-show="item.guide.homepage!==undefined" href="{{item.guide.homepage}}" target="_blank">{{item.guide.name}}, {{item.guide.title}}</a>
 							</div>
-							<div ng-show="item.link!==undefined">
+							<div ng-show="item.link !== undefined">
 								<i class="fa fa-link bullet"></i>
 								<a href={{item.link.href}} target="_blank">{{item.link.label}}</a>
 							</div>
