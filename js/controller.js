@@ -13,7 +13,7 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 
 	//DATA
 	$scope.nameText="Prashant Kumar Modak";
-	$scope.nameSubtext="I code for fun and food.";
+	$scope.nameSubtext="I code for fun.";
 
 	$scope.aboutMe=[
 		{
