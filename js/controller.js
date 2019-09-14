@@ -70,7 +70,7 @@ zambreyApp.controller('zambrey-ctrl', function($scope){
 	];
 
 	$scope.contact=[{
-		"description":"[firstname] DOT [kr] DOT [mod] AT gmail DOT com"
+		"description":"[prashant] DOT [kr] DOT [mod] AT gmail DOT com"
 	}];
 
 	$scope.sections=[
